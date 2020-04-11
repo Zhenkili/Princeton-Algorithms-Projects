@@ -61,7 +61,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         return queue[index];
     }
 
-    public void resize(){
+    private void resize(){
         int newlength = 2 * queue.length;
         Item[] newqueue = (Item[]) new Object[newlength];
         for(int i = 0; i < queue.length; i++){
@@ -70,7 +70,7 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
         queue = newqueue;
     }
 
-    public void shrink(){
+    private void shrink(){
         int newlength = queue.length / 2;
         Item[] newqueue = (Item[]) new Object[newlength];
         for(int i = 0; i < queue.length; i++){

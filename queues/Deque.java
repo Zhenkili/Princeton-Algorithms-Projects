@@ -1,11 +1,5 @@
-/* *****************************************************************************
- *  Name: Zhenqi Li
- *  Date: 2020/4/08
- *  Description: Second Homework
- **************************************************************************** */
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-
 
 public class Deque<Item> implements Iterable<Item> {
 
@@ -144,30 +138,30 @@ public class Deque<Item> implements Iterable<Item> {
     // unit testing (required)
     public static void main(String[] args){
 
-        Deque<Integer> deque = new Deque<>();
-        System.out.println(deque.isEmpty() == true);
-        deque.addFirst(1);
-        System.out.println(deque.isEmpty() == false);
-        deque.addLast(2);
-        deque.addLast(3);
-        System.out.println(deque.size() == 3);
-        System.out.println(deque.removeFirst() == 1);
-        System.out.println(deque.removeLast() == 3);
-        System.out.println(deque.size() == 1);
-        Deque<String> deq = new Deque<>();
-        deq.addFirst("two");
-        deq.addFirst("one");
-        deq.addLast("three");
-        deq.addLast("four");
-        Iterator<String> it = deq.iterator();
-        System.out.println(it.hasNext() == true);
-        System.out.println(it.next() == "one");
-        System.out.println(it.next() == "two");
-        System.out.println(it.next() == "three");
-        System.out.println(it.next() == "four");
-        System.out.println(it.hasNext() == false);
-        System.out.println(it.next().equals(new NoSuchElementException()));
-        System.out.println(it.next().equals(new UnsupportedOperationException()));
+        // Deque<Integer> deque = new Deque<>();
+        // System.out.println(deque.isEmpty() == true);
+        // deque.addFirst(1);
+        // System.out.println(deque.isEmpty() == false);
+        // deque.addLast(2);
+        // deque.addLast(3);
+        // System.out.println(deque.size() == 3);
+        // System.out.println(deque.removeFirst() == 1);
+        // System.out.println(deque.removeLast() == 3);
+        // System.out.println(deque.size() == 1);
+        // Deque<String> deq = new Deque<>();
+        // deq.addFirst("two");
+        // deq.addFirst("one");
+        // deq.addLast("three");
+        // deq.addLast("four");
+        // Iterator<String> it = deq.iterator();
+        // System.out.println(it.hasNext() == true);
+        // System.out.println(it.next() == "one");
+        // System.out.println(it.next() == "two");
+        // System.out.println(it.next() == "three");
+        // System.out.println(it.next() == "four");
+        // System.out.println(it.hasNext() == false);
+        // System.out.println(it.next().equals(new NoSuchElementException()));
+        // System.out.println(it.next().equals(new UnsupportedOperationException()));
     }
 
 }
